@@ -1,0 +1,65 @@
+.login_items img {
+  width: 500px;
+  height: 35em;
+}
+.login_items {
+  display: flex;
+}
+.login_Container {
+  box-shadow: 0 0 5px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login_background {
+  width: 350px;
+  padding: 50px;
+  background-color: #e7e7e7;
+}
+.input_field {
+  width: 100%;
+  border: none;
+  height: 3em;
+  border-radius: 0.4em;
+  padding-left: 0.5em;
+}
+.paragraph {
+  text-align: center;
+}
+.heading {
+  text-align: center;
+}
+.btn_startnow {
+  color: white;
+  font-weight: bold;
+  background-color: var(--primary);
+  border: none;
+  width: 100%;
+  margin-top: 2em;
+  height: 3em;
+  border-radius: 1em;
+}
+.input_field:hover {
+  border: 1px solid red;
+}
+.signup {
+  color: var(--primary);
+}
+.btn_startnow:hover {
+  background-color: #c4b454;
+}
+.login_google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  place-items: center;
+}
+.password_txt {
+  display: flex;
+  justify-content: space-between;
+}
+.forgot_password_txt {
+  color: var(--primary);
+}

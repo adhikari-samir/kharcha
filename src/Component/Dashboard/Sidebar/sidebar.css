@@ -1,0 +1,39 @@
+.background {
+  background-color: #fbfcf6;
+  width: 100%;
+}
+
+.side_nav_bar {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
+  width: 18%;
+  height: 35em;
+  border-radius: 20px;
+  margin-left: 0.8em;
+  font-weight: 600;
+  font-size: 1.1em;
+  border: none;
+  margin-top: -1em;
+}
+.navbar_component {
+  padding: 10px;
+}
+
+.navbar_component li {
+  list-style: none;
+  padding: 20px 10px;
+  width: 92%;
+}
+.navbar_component li a {
+  text-decoration: none;
+  color: #000;
+  padding-left: 25px;
+}
+.navbar_component li:hover {
+  background-color: #f6f6f6;
+  color: white;
+  border-radius: 20px;
+}
+.navbar_component li i {
+  padding-left: 20px;
+}

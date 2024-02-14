@@ -1,0 +1,32 @@
+.backgrround {
+  max-width: 100%;
+  background-color: rgb(211, 209, 209);
+  min-height: 10vh;
+}
+.backgrround h1 {
+  font-family: "Moon Dance", cursive;
+  font-weight: 800;
+  color: #219ebc;
+  margin-left: 10vh;
+  cursor: pointer;
+  margin-top: -0.01em;
+}
+span {
+  color: red;
+  font-size: 1.5em;
+}
+.header_logo {
+  float: right;
+  margin-top: -8.5vh;
+  margin-right: 10vh;
+}
+
+.header_logo button {
+  background-color: #219ebc;
+  color: white;
+  border: none;
+  padding: 1.2vh;
+  max-width: 13vh;
+  border-radius: 1vh;
+  font-size: 0.9em;
+}
