@@ -45,7 +45,7 @@ const Navbar = () => {
                 <MdSunny size={20} color="yellow" />
               </i>
             </div>
-            <div>Good Afternoon, Sameer </div>
+            <div>Good Afternoon , sameer </div>
           </div>
 
           <div className="header_icons">

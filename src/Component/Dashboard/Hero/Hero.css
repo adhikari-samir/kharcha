@@ -30,3 +30,43 @@ span {
   border-radius: 1vh;
   font-size: 0.9em;
 }
+
+.fp-container {
+  display: flex;
+}
+.title {
+  color: #023047;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.fp-items button {
+  margin-top: 3vh;
+  background-color: #219ebc;
+  color: white;
+  box-sizing: border-box;
+  padding: 1vh;
+  width: 18vh;
+  border: none;
+  border-radius: 1vh;
+  font-size: 1em;
+}
+.battan:hover {
+  background-color: #ffb703;
+}
+.fp-container img {
+  margin-top: 8vh;
+  width: 100vh;
+  height: 80vh;
+}
+.fp-items p {
+  width: 69vh;
+}
+.fp-items {
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30vh;
+  margin-left: 10vh;
+}

@@ -27,6 +27,9 @@
 .paragraph {
   text-align: center;
 }
+.paragraph span {
+  font-size: 1em;
+}
 .heading {
   text-align: center;
 }

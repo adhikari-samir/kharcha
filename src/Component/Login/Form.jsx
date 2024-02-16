@@ -1,24 +1,19 @@
-import React from "react";
+import React, { useContext, useState, createContext } from "react";
 import loginImg from "../Image/login.jpg";
 import "./Form.css";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useUserContext } from "../Dashboard/Usercontext/Usercontext";
 
 const Form = () => {
+  const { user } = useUserContext();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const navigate = useNavigate();
 
-  const User = [
-    {
-      email: "Dashboard@gmail.com",
-      password: "Dashboard",
-    },
-  ];
-
   const handleButtonclick = () => {
-    const isuservalid = User.find(
+    const isuservalid = user.find(
       (user) => user.email === email && user.password === password
     );
     if (isuservalid) {

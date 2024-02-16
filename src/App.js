@@ -7,16 +7,19 @@ import Home from "./Component/Dashboard/Home/Home";
 import { Route, Routes } from "react-router-dom";
 import Hero from "./Component/Dashboard/Hero/Hero";
 import Piechart from "./Component/Piechart/Piechart";
+import { UserProvider } from "./Component/Dashboard/Usercontext/Usercontext";
 
 function App() {
   return (
     <>
-      <Piechart />
-      {/* <Routes>
-        <Route path="/" element={<Hero />}></Route>
-        <Route path="/login" element={<Form />}></Route>
-        <Route path="/dashboard" element={<Home />}></Route>
-      </Routes> */}
+      {/* <Piechart /> */}
+      <UserProvider>
+        <Routes>
+          <Route path="/" element={<Hero />}></Route>
+          <Route path="/login" element={<Form />}></Route>
+          <Route path="/dashboard" element={<Home />}></Route>
+        </Routes>
+      </UserProvider>
     </>
   );
 }
