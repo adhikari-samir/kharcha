@@ -31,7 +31,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="background">
+      <div className="background2">
         <div className="header">
           <div>
             <h1 className="header_logos">

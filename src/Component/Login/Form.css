@@ -66,3 +66,7 @@
 .forgot_password_txt {
   color: var(--primary);
 }
+.errror_message {
+  color: red;
+  margin-top: -0.1em;
+}

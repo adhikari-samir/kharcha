@@ -10,6 +10,7 @@ const Dashboard = () => {
 
   const userRole = isAdmin ? "Admin" : "User";
 
+  console.log(user);
   return (
     <>
       <div>

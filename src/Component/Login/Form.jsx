@@ -4,24 +4,45 @@ import "./Form.css";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import { useUserContext } from "../Dashboard/Usercontext/Usercontext";
+import axios from "axios";
 
 const Form = () => {
   const { user } = useUserContext();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [invalidCredentials, setInvalidCredentials] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleButtonclick = () => {
-    const isuservalid = user.find(
-      (user) => user.email === email && user.password === password
-    );
-    if (isuservalid) {
-      navigate("/dashboard");
-    } else {
-      alert("lah fuck");
+  const handleButtonclick = async () => {
+    try {
+      const response = await axios.post("https://dummyjson.com/auth/login", {
+        username: email,
+        password: password,
+      });
+      if (response.status === 200 && response.data.token) {
+        localStorage.setItem("token", response.data.token);
+        console.log(response);
+        navigate("/dashboard");
+      } else {
+        alert("Login failed.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setInvalidCredentials(true);
     }
   };
+
+  // const loginUser = user.find(
+  //   (user) => user.email === email && user.password === password
+  // );
+
+  // if (loginUser && loginUser.Token === "abc") {
+  //   navigate("/dashboard");
+  // } else {
+  //   alert("lah fuck.");
+  // }
+
   return (
     <div className="login_Container">
       <div className="login_items">
@@ -51,6 +72,12 @@ const Form = () => {
             className="input_field"
             placeholder="enter your password"
           ></input>
+
+          {invalidCredentials && (
+            <p className="errror_message">
+              Invalid credentials. Please try again
+            </p>
+          )}
           <button className="btn_startnow" onClick={handleButtonclick}>
             Start now !
           </button>

@@ -1,12 +1,11 @@
 .background {
-  background-color: #fbfcf6;
-  width: 100%;
+  padding-top: 0.75em;
 }
 
 .side_nav_bar {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #fff;
-  width: 18%;
+  width: 100%;
   height: 35em;
   border-radius: 20px;
   margin-left: 0.8em;
@@ -36,4 +35,65 @@
 }
 .navbar_component li i {
   padding-left: 20px;
+}
+.background_component {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fbfcf6;
+}
+
+.details {
+  height: 18em;
+  margin-top: 1em;
+  background-color: #06a757;
+  color: white;
+}
+.flexing_logonbtn {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5em;
+  width: 80%;
+}
+.flexing_logonbtn i {
+  margin-top: 2em;
+}
+.flexing_logonbtn h1 {
+  margin-top: -0.001em;
+}
+.details_comp {
+  margin-left: 1.5em;
+}
+.recentransaction_txt {
+  font-size: 20px;
+  font-weight: 700;
+}
+.transaction_datas {
+  border: 0.1px solid black;
+  width: 25em;
+  height: 14.5em;
+  margin-top: -1em;
+  border-radius: 20px;
+  margin-left: 1em;
+}
+.flexing_transaction_datas {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-left: 2em;
+}
+.date {
+  margin-left: 2em;
+  margin-top: -1em;
+}
+.Recent_transaction_Component {
+  margin-left: 0.8em;
+  background-color: #fefeff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 18.2em;
+  margin-top: 1em;
+  border-radius: 20px;
+  width: 59%;
+}
+.recentransaction_txt {
+  padding-left: 0.8em;
 }

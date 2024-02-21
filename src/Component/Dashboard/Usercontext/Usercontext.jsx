@@ -8,13 +8,19 @@ const UserProvider = ({ children }) => {
       email: "Dashboard@gmail.com",
       password: "Dashboard",
       role: "Admin",
-      Token: "abc",
+      Token: "",
     },
     {
       email: "User@gmail.com",
       password: "User",
       role: "User",
-      Token: "null",
+      Token: "abc",
+    },
+    {
+      email: "hancy@gmail.com",
+      password: "User",
+      role: "User",
+      Token: "",
     },
   ]);
 
