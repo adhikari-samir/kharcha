@@ -3,14 +3,15 @@ import Chart from "react-apexcharts";
 
 const Piechart = () => {
   const optios = {
-    labels: ["Apple", "Banana", "Oranges", "Grapes", "Mango"],
+    labels: ["Income", "Expense"],
+    colors: ["#07A756", "#F04A50"],
   };
 
-  const series = [44, 55, 13, 43, 22];
+  const series = [40, 60];
 
   return (
     <div>
-      <Chart options={optios} series={series} type="donut" width={380} />
+      <Chart options={optios} series={series} type="donut" width={280} />
     </div>
   );
 };

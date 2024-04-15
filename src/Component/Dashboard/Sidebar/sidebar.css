@@ -5,7 +5,7 @@
 .side_nav_bar {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #fff;
-  width: 100%;
+  width: 13.9em;
   height: 35em;
   border-radius: 20px;
   margin-left: 0.8em;
@@ -38,15 +38,17 @@
 }
 .background_component {
   display: flex;
-  justify-content: flex-start;
+
   background-color: #fbfcf6;
 }
 
 .details {
-  height: 18em;
+  height: 17.2em;
   margin-top: 1em;
-  background-color: #06a757;
+  background: linear-gradient(315deg, #07a756 0%, #657d52 100%);
   color: white;
+  width: 26em;
+  margin-left: 0.8em;
 }
 .flexing_logonbtn {
   display: flex;
@@ -59,21 +61,23 @@
 }
 .flexing_logonbtn h1 {
   margin-top: -0.001em;
+  color: #7e3dfe;
 }
 .details_comp {
   margin-left: 1.5em;
 }
 .recentransaction_txt {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  padding-left: 0.8em;
 }
 .transaction_datas {
-  border: 0.1px solid black;
-  width: 25em;
-  height: 14.5em;
+  border: 0.0000001px solid #eee6d6;
+  width: 24em;
   margin-top: -1em;
   border-radius: 20px;
   margin-left: 1em;
+  height: 14em;
 }
 .flexing_transaction_datas {
   display: flex;
@@ -85,15 +89,98 @@
   margin-left: 2em;
   margin-top: -1em;
 }
-.Recent_transaction_Component {
-  margin-left: 0.8em;
+.second_component {
   background-color: #fefeff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  height: 18.2em;
+  height: 17.1em;
   margin-top: 1em;
   border-radius: 20px;
-  width: 59%;
+  width: 64%;
+  display: flex;
+  margin-left: 0.8em;
 }
-.recentransaction_txt {
+
+.line {
+  border: 1px solid #eee6d6;
+}
+
+.piechart_component {
+  margin-left: 2em;
+}
+.Incomeandexpense_txt {
+  font-size: 13.5px;
+  font-weight: 700;
   padding-left: 0.8em;
+  margin-top: 4em;
+  margin-left: -2.5em;
+}
+
+.flexingbothtext {
+  display: flex;
+}
+.viewall_txt {
+  font-size: 13px;
+}
+.btn_viewstatement {
+  background-color: #fff;
+  border: 1px solid #eee6d6;
+  width: 30em;
+  height: 3em;
+  margin-left: -1em;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  align-items: center;
+  padding-top: 0.1em;
+}
+.btn_viewtransaction {
+  position: absolute;
+  margin-left: -2em;
+  margin-top: -5px;
+}
+.truuuuuuuuuuuu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.MyShortcuts_component {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fefeff;
+  margin-left: 0.8em;
+  height: 10em;
+  width: 25.9em;
+  border-radius: 20px;
+  margin-top: -9.6em;
+}
+.flexing_myshortcut {
+  display: flex;
+  justify-content: space-evenly;
+}
+.myshortcut_txt {
+  padding-left: 0.5em;
+  font-size: 17px;
+}
+.flexing_myshortcut {
+  font-weight: 600;
+  font-size: 13px;
+}
+.line2 {
+  border-right: 2px solid #f0f2ee;
+  padding-right: 3em;
+}
+.MyShortcuts_component2 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fefeff;
+  margin-left: 0.8em;
+  height: 10em;
+  width: 24.5em;
+  border-radius: 20px;
+  margin-top: -9.6em;
+}
+.line3 {
+  border-right: 2px solid #f0f2ee;
+  padding-right: 5em;
+  font-size: 13px;
+}
+.khalti_text {
+  font-size: 13px;
 }

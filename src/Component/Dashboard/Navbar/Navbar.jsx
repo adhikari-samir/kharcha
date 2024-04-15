@@ -12,23 +12,23 @@ import { GrTransaction } from "react-icons/gr";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const datas = [
-    {
-      Account_name: "Sameeradk",
-      Balance: "123",
-      Account_number: 1,
-    },
-    {
-      Account_name: "sandip",
-      Balance: "234",
-      Account_number: 2,
-    },
-    {
-      Account_name: "Nirgun",
-      Balance: "345",
-      Account_number: 3,
-    },
-  ];
+  // const datas = [
+  //   {
+  //     Account_name: "Sameeradk",
+  //     Balance: "123",
+  //     Account_number: 1,
+  //   },
+  //   {
+  //     Account_name: "sandip",
+  //     Balance: "234",
+  //     Account_number: 2,
+  //   },
+  //   {
+  //     Account_name: "Nirgun",
+  //     Balance: "345",
+  //     Account_number: 3,
+  //   },
+  // ];
   return (
     <>
       <div className="background2">
